@@ -1,0 +1,10 @@
+l=[0,100,32,55,882,1352]
+def sort(l):
+    for i in range(1,len(l)-1):
+        for j in range(len(l)-i):
+            if(l[j]>l[j+1]):
+                t=l[j]
+                l[j]=l[j+1]
+                l[j+1]=t
+sort(l)
+print(l)
